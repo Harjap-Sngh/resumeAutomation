@@ -1,169 +1,186 @@
-// data/data.js
-
 module.exports = {
-  name: "HARJAP SINGH",
-  contact: {
-    phone: "+1-368-299-8312",
-    email: "singhharjap705@gmail.com",
-    linkedin: "https://www.linkedin.com/in/harjap-singh705/",
-    portfolio: "https://harjap-portfolio.vercel.app/",
-    github: "https://github.com/Harjap-Sngh",
+  "name": "HARJAP SINGH",
+  "contact": {
+    "phone": "+1-368-299-8312",
+    "email": "singhharjap705@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/harjap-singh705/",
+    "portfolio": "https://harjap-portfolio.vercel.app/",
+    "github": "https://github.com/Harjap-Sngh"
   },
-  summary: `Early-career Full-Stack Engineer with a strong bias for action and a passion for building scalable, real-time web and mobile applications. Proven ability to design, develop, and deploy robust solutions using TypeScript, Next.js, and modern cloud platforms. Adept at tackling ambiguous problems, quickly learning new technologies, and driving projects autonomously. Experienced in contributing to AI-powered features and optimizing system architecture for high performance and reliability. Eager to leverage strong software engineering skills in a fast-paced, collaborative environment.`,
-  skills: {
-    languages: ["JavaScript", "TypeScript", "Python", "Java", "C#"],
-    frontend: ["React", "Next.js", "Tailwind CSS", "Shadcn UI", "HTML", "CSS"],
-    backend: [
+  "summary": "Detail-oriented Front-End Developer with a passion for building intuitive, responsive, and mobile-first web applications. Proficient in translating Figma designs into pixel-perfect, production-ready React components using Next.js, TypeScript, and Tailwind CSS. A collaborative team player with experience in Agile methodologies and leveraging AI to improve development workflows. Eager to apply strong problem-solving skills to a mission-driven team dedicated to making mental healthcare more accessible.",
+  "skills": {
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "Java",
+      "C#"
+    ],
+    "frontend": [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+      "Shadcn UI"
+    ],
+    "backend": [
       "Node.js",
-      "Supabase",
-      "Firebase",
       "REST APIs",
-      "Drizzle ORM",
       "PostgreSQL",
       "MongoDB",
+      "Drizzle ORM",
+      "Supabase",
+      "Firebase"
     ],
-    mobile: ["React Native", "Expo"],
-    tools: [
-      "Azure",
-      "Vercel",
+    "mobile": [
+      "React Native",
+      "Expo"
+    ],
+    "tools": [
       "Git",
       "GitHub",
+      "Figma",
+      "Vercel",
+      "Azure",
       "Socket.io",
       "Redis",
-      "AI Tools",
-      "Trello",
+      "AI Tools"
     ],
-    practices: ["Agile", "SDLC", "Code Reviews", "CI/CD"],
+    "practices": [
+      "Agile",
+      "Mobile-First Design",
+      "Code Reviews",
+      "CI/CD",
+      "SDLC"
+    ]
   },
-  softSkills: [
-    "Proactive & Results-Oriented",
-    "Autonomy & Self-Direction",
-    "Adaptability & Problem-Solving",
+  "softSkills": [
     "Collaboration & Communication",
-    "Continuous Learning",
+    "Adaptability & Problem-Solving",
+    "Attention to Detail",
+    "Proactive & Results-Oriented",
+    "Project Management",
+    "Continuous Learning"
   ],
-  education: {
-    school: "Southern Alberta Institute of Technology (SAIT)",
-    program: "Software Development",
-    gpa: "3.98 / 4.0",
-    focus: "Full-stack development, mobile applications, and UI/UX design",
+  "education": {
+    "school": "Southern Alberta Institute of Technology (SAIT)",
+    "program": "Software Development",
+    "gpa": "3.98 / 4.0",
+    "focus": "Full-stack development, mobile applications, and UI/UX design"
   },
-  experience: [
+  "experience": [
     {
-      title: "Volunteer Software Developer",
-      company: "Destination History, Calgary",
-      date: "Jan 2025 – Present",
-      points: [
-        "Architected and developed a mobile application promoting educational tourism.",
-        "Contributed to UI component development and streamlined content flow using React Native.",
-        "Implemented AI features for smart tour planning, reducing planning time and personalizing tours.",
-        "Deployed app modules to Azure, ensuring a scalable and resilient infrastructure.",
-      ],
+      "title": "Volunteer Software Developer",
+      "company": "Destination History, Calgary",
+      "date": "Jan 2025 – Present",
+      "points": [
+        "Collaborated in a team to architect and develop a mobile application for educational tourism using React Native.",
+        "Developed responsive UI components and implemented AI-powered features to deliver a personalized user experience.",
+        "Gained experience with cloud deployment by deploying application modules to Azure, ensuring a scalable infrastructure."
+      ]
     },
     {
-      title: "Freelance Web Developer",
-      company: "Hawk Eye Car Detailing, Calgary",
-      date: "May 2025 – Present",
-      points: [
-        "Built a responsive service website using Next.js and Tailwind CSS.",
-        "Developed reusable components and a CMS, improving development efficiency by 20%.",
-      ],
+      "title": "Freelance Web Developer",
+      "company": "Hawk Eye Car Detailing, Calgary",
+      "date": "May 2025 – Present",
+      "points": [
+        "Engineered and launched a fully responsive, mobile-first website from scratch using Next.js and Tailwind CSS, directly aligning with modern front-end best practices.",
+        "Translated client requirements into a pixel-perfect, user-friendly interface to enhance online presence and customer engagement.",
+        "Developed a library of reusable React components, improving development efficiency and ensuring design consistency."
+      ]
     },
     {
-      title: "Software Developer Intern",
-      company: "CodSoft",
-      date: "May 2024 – July 2024",
-      points: [
-        "Contributed to frontend architecture and key page development using React and Next.js.",
-        "Participated in sprint planning and code reviews following Agile methodologies.",
-      ],
+      "title": "Software Developer Intern",
+      "company": "CodSoft",
+      "date": "May 2024 – July 2024",
+      "points": [
+        "Contributed to the front-end architecture of a full-scale React application, building key user-facing features with Next.js and TypeScript.",
+        "Actively participated in an Agile development environment, contributing to sprint planning, code reviews, and daily stand-ups.",
+        "Collaborated with senior developers and QA to ensure the delivery of high-quality, well-tested code."
+      ]
     },
     {
-      title: "Supervisor",
-      company: "Wine and Beyond, Airdrie",
-      date: "Jan 2024 – Present",
-      points: [
-        "Led daily operations and supported customer satisfaction in a fast-paced retail setting.",
-        "Designed promotional visuals and improved team coordination.",
-      ],
-    },
+      "title": "Supervisor",
+      "company": "Wine and Beyond, Airdrie",
+      "date": "Jan 2024 – Present",
+      "points": [
+        "Managed daily team operations in a fast-paced retail environment, demonstrating strong project management and communication skills.",
+        "Led team coordination and training efforts, fostering a collaborative and supportive work atmosphere."
+      ]
+    }
   ],
-  projects: [
+  "projects": [
     {
-      title: "Note-Taking App",
-      techStack: [
+      "title": "Note-Taking App",
+      "techStack": [
         "Next.js",
-        "Supabase",
-        "Drizzle",
-        "Tailwind",
-        "Socket.io",
         "TypeScript",
+        "Tailwind CSS",
+        "Socket.io",
         "PostgreSQL",
-        "Vercel",
+        "Drizzle ORM",
+        "Supabase",
+        "Vercel"
       ],
-      description: [
-        "Engineered a cloud-synced productivity tool supporting workspace, folder, and note hierarchy with real-time synchronization capabilities using Socket.io and PostgreSQL (via Drizzle ORM).",
-        "Led backend logic development and co-developed the frontend UI/UX using Next.js and TypeScript, deployed on Vercel.",
+      "description": [
+        "Developed a full-stack, real-time note-taking application using Next.js, TypeScript, and Tailwind CSS.",
+        "Implemented real-time data synchronization using Socket.io and managed the PostgreSQL database with Drizzle ORM."
       ],
-      links: {
-        github: "https://github.com/Harjap-Sngh/Notes-App",
-        website: "https://notes-app-ten-rosy.vercel.app/",
-      },
+      "links": {
+        "github": "https://github.com/Harjap-Sngh/Notes-App",
+        "website": "https://notes-app-ten-rosy.vercel.app/"
+      }
     },
     {
-      title: "Music Mobile App (BeatFlow)",
-      techStack: [
+      "title": "Music Mobile App (BeatFlow)",
+      "techStack": [
         "React Native",
         "TypeScript",
         "Expo",
         "Firebase",
         "MongoDB",
-        "Deezer API",
-        "Expo AV",
-        "Tailwind CSS",
+        "Deezer API"
       ],
-      description: [
-        "Developed a cross-platform music app using React Native, TypeScript, and Expo with real-time playback, search, and dynamic content browsing.",
-        "Integrated Firebase Authentication, MongoDB, and Deezer API for streaming, user management, playlists, and cross-device sync.",
-        "Built advanced audio controls with background playback, track navigation, and progress tracking using Expo AV and React Context API.",
+      "description": [
+        "Built a cross-platform mobile music application using React Native and TypeScript, integrating the Deezer API for music streaming.",
+        "Implemented Firebase Authentication for user management and MongoDB for storing user data like playlists."
       ],
-      links: {
-        github: "https://github.com/Angmiin/music-app-v1",
-        figma:
-          "https://www.figma.com/design/bwPhPm0OetQt1x5PMIps30/Beat-Flow?node-id=0-1&t=bG2Z5ZUjj9TlMrWt-1",
-      },
+      "links": {
+        "github": "https://github.com/Angmiin/music-app-v1",
+        "figma": "https://www.figma.com/design/bwPhPm0OetQt1x5PMIps30/Beat-Flow?node-id=0-1&t=bG2Z5ZUjj9TlMrWt-1"
+      }
     },
     {
-      title: "Sustainable (Design Project)",
-      techStack: ["Figma"],
-      description: [
-        "Created a clean, modern UI for a food-saving app inspired by Too Good To Go.",
-        "Created high-fidelity screens and user flows to demonstrate functionality.",
+      "title": "Sustainable (Design Project)",
+      "techStack": [
+        "Figma"
       ],
-      links: {
-        figma:
-          "https://www.figma.com/proto/GLNNfPNeBsIFLyj40kgIzl/Sustainable?node-id=0-1&t=5KohTdxPuIowiEDk-1",
-      },
+      "description": [
+        "Designed a high-fidelity, user-centered prototype for a mobile application using Figma, focusing on a clean and modern UI/UX.",
+        "Demonstrated a meticulous eye for detail by translating conceptual ideas into pixel-perfect user flows and interactive screens."
+      ],
+      "links": {
+        "figma": "https://www.figma.com/proto/GLNNfPNeBsIFLyj40kgIzl/Sustainable?node-id=0-1&t=5KohTdxPuIowiEDk-1"
+      }
     },
     {
-      title: "Car Rental Web App",
-      techStack: [
+      "title": "Car Rental Web App",
+      "techStack": [
         "React.js",
-        "SCSS",
         "JavaScript ES6+",
-        "HTML5",
-        "CSS3",
         "Shadcn UI",
-        "Vercel",
-        "Git",
+        "Tailwind CSS",
+        "HTML5",
+        "Vercel"
       ],
-      description: [
-        "Developed a modern, responsive web application for car rentals, focusing on intuitive UI/UX using React.js and Shadcn UI.",
-        "Implemented dynamic car listings, search functionalities, and a streamlined booking interface, deployed on Vercel.",
+      "description": [
+        "Developed a fully responsive, mobile-first car rental web application using React.js and Shadcn UI.",
+        "Implemented dynamic search and filtering functionalities to create a seamless and intuitive booking experience for users."
       ],
-      links: {
-        website: "https://car-rental-harjap-snghs-projects.vercel.app/",
-      },
-    },
-  ],
+      "links": {
+        "website": "https://car-rental-harjap-snghs-projects.vercel.app/"
+      }
+    }
+  ]
 };

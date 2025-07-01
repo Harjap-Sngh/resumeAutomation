@@ -1,38 +1,82 @@
-// scripts/generateResume.js
+import prompt from "../data/prompt.js";
+import jobDescription from "../data/jobDescription.js";
+import data from "../data/data.js";
+import * as dotenv from "dotenv";
+import puppeteer from "puppeteer";
+import fs from "fs";
+import axios from "axios";
 
-const puppeteer = require("puppeteer");
+dotenv.config();
+
+const geminiURL =
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent";
+const apiKey = process.env.GEMINI_API_KEY;
+
+async function askGemini(prompt) {
+  const response = await axios.post(
+    `${geminiURL}?key=${apiKey}`,
+    {
+      contents: [{ parts: [{ text: prompt }] }],
+    },
+    {
+      headers: { "Content-Type": "application/json" },
+    }
+  );
+
+  const text = response.data?.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!text) throw new Error("No valid response from Gemini.");
+  return text;
+}
+
+async function updateResumeData() {
+  const fullPrompt = `
+${prompt}
+
+--- Resume Data (object stays the same, just improve the content) ---
+${JSON.stringify(data, null, 2)}
+
+--- Job Description ---
+${JSON.stringify(jobDescription, null, 2)}
+  `.trim();
+
+  console.log("🤖 Sending to Gemini...");
+  const responseText = await askGemini(fullPrompt);
+
+  const jsStart = responseText.indexOf("{");
+  const jsEnd = responseText.lastIndexOf("}") + 1;
+  const jsCode = responseText.slice(jsStart, jsEnd);
+
+  fs.writeFileSync("../resume/data/data.js", `module.exports = ${jsCode};\n`);
+  console.log("✅ Updated data.js with Gemini-enhanced content.");
+}
 
 async function generatePDF() {
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  });
-
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  await page.goto("http://localhost:3000", { waitUntil: "networkidle0" });
 
-  // Navigate to your resume page
-  await page.goto("http://localhost:3000", {
-    waitUntil: "networkidle0",
-  });
-
-  // Wait for Resume component to render (optional if no loading delay)
-  await page.waitForSelector("main");
-
-  // Generate high-quality, A4 multi-page PDF
   await page.pdf({
     path: "resume.pdf",
     format: "A4",
     printBackground: true,
     margin: {
-      top: "1.15cm",
-      bottom: "1.15cm",
-      left: "1.15cm",
-      right: "1.15cm",
+      top: "1.27cm",
+      bottom: "1.27cm",
+      left: "1.27cm",
+      right: "1.27cm",
     },
   });
 
   await browser.close();
-  console.log("✅ resume.pdf generated successfully!");
+  console.log("📄 Generated resume.pdf");
 }
 
-generatePDF();
+(async () => {
+  try {
+    await updateResumeData();
+    await new Promise((r) => setTimeout(r, 2000));
+    await generatePDF();
+  } catch (err) {
+    console.error("❌ Error:", err.message);
+  }
+})();

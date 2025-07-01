@@ -10,6 +10,9 @@
     "generate": "node scripts/generateResume.js"
   },
   "dependencies": {
+    "@google/genai": "^1.7.0",
+    "axios": "^1.10.0",
+    "dotenv": "^17.0.0",
     "next": "15.3.4",
     "puppeteer": "^24.11.1",
     "react": "^19.0.0",
