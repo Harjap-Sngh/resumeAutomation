@@ -34,13 +34,19 @@ Do not invent new skills — only optimize existing ones with better keywords.
 Education
 Do not modify the education section at all.
 
-
 Final Output
 Return a complete, clean, and valid JSON file — optimized for high ATS scores and ready to be parsed by resume systems.
 Maintain JSON structure and data integrity while improving clarity, relevance, and keyword alignment.
 
 Goal:
 Make my resume highly relevant to the job description, fully optimized for ATS parsing, while preserving the data I’ve provided — no fake entries, no schema changes.
+
+Additionally, based on the same data.json and job description, generate a tailored cover letter using the coverLetter object. Update the "body" field only to reflect the role being targeted.
+• Do not change or remove the keys (company, hiringTeam, dearMessage, body)
+• Match the tone of the resume
+• Include real highlights from my projects, experience, and skills that align with the job
+• Be concise and compelling — max 3–4 short paragraphs
+• Do not add or invent new technologies or experience
 `;
 
 module.exports = prompt;

@@ -71,11 +71,33 @@ async function generatePDF() {
   console.log("📄 Generated resume.pdf");
 }
 
+async function generateCoverLetter() {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto("http://localhost:3000/cover", { waitUntil: "networkidle0" });
+
+  await page.pdf({
+    path: "coverLetter.pdf",
+    format: "A4",
+    printBackground: true,
+    margin: {
+      top: "2.00cm",
+      bottom: "2.27cm",
+      left: "2.27cm",
+      right: "2.27cm",
+    },
+  });
+
+  await browser.close();
+  console.log("📄 Generated coverLetter.pdf");
+}
+
 (async () => {
   try {
-    await updateResumeData();
+    // await updateResumeData();
     await new Promise((r) => setTimeout(r, 2000));
     await generatePDF();
+    await generateCoverLetter();
   } catch (err) {
     console.error("❌ Error:", err.message);
   }
