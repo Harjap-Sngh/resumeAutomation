@@ -46,7 +46,10 @@ ${JSON.stringify(jobDescription, null, 2)}
   const jsEnd = responseText.lastIndexOf("}") + 1;
   const jsCode = responseText.slice(jsStart, jsEnd);
 
-  fs.writeFileSync("../resume/data/data.js", `module.exports = ${jsCode};\n`);
+  fs.writeFileSync(
+    "../resumeAutomation/data/data.js",
+    `module.exports = ${jsCode};\n`
+  );
   console.log("✅ Updated data.js with Gemini-enhanced content.");
 }
 
@@ -94,7 +97,7 @@ async function generateCoverLetter() {
 
 (async () => {
   try {
-    // await updateResumeData();
+    await updateResumeData();
     await new Promise((r) => setTimeout(r, 2000));
     await generatePDF();
     await generateCoverLetter();
