@@ -1,68 +1,30 @@
 module.exports = {
-  jobDescription: `About Compugen
-Compugen is Canada's largest privately-owned Technology Ally. To innovate industries, transform businesses, connect communities, and drive meaningful change, we must think bigger, reach broader, and act bolder. Through knowledge, curiosity, and collaboration, Compugen helps organizations delivering experience by design. This is what it means to be human-centered and technology-enabled.
+  jobDescription: `Duties
 
-Dreaming, designing, and delivering isn't just a mantra for us — it's a way of life. We believe that technology is the conduit, but our people – they are the connection that truly makes the magic happen!
- 
-Our Culture
-We are a human-centered culture where we prioritize your well-being and are invested in helping you reach your fullest potential. We're not only focused on achieving our goals — we're dedicated to helping you achieve yours.
+Design, develop, and maintain robust web applications using front-end frameworks such as React and Express, ensuring responsive and intuitive user interfaces.
+Build and optimize backend services with technologies like Ruby on Rails, Java, C#, .NET, Python, and C++, creating efficient RESTful APIs for seamless data exchange.
+Collaborate with cross-functional teams in Agile environments to plan sprints, review code, and deliver high-quality software on time.
+Manage database systems including MySQL and SQL Server, writing optimized queries and ensuring data integrity across platforms.
+Implement cloud solutions utilizing AWS and Azure to deploy scalable applications with secure access controls like RBAC (Role-Based Access Control).
+Maintain version control using GitHub and SVN, conducting code reviews and managing branching strategies for continuous integration.
+Develop application features for both front-end and back-end components while adhering to best practices in web development and software engineering standards.
+Integrate third-party APIs and develop custom RESTful APIs to extend application functionality across various services.
+Ensure system security by implementing authentication protocols such as RBAC, managing user permissions effectively.
+Contribute to infrastructure automation on Linux environments, optimizing deployment pipelines for efficiency.
+Participate in code documentation, testing procedures, and troubleshooting to uphold high standards of quality assurance.
+Experience
 
-If you're relentlessly curious, driven to make a difference, and collaborative at the core, then you belong with us.
- 
-Position Overview:
-The IT Support Technician is responsible for setting up, maintaining, and supporting hardware, software, and network connectivity at designated sites. This role involves daily equipment setup and shutdown, user support, login management, and ensuring secure handling of authentication devices and credentials. The technician will troubleshoot hardware, software, and connectivity issues, escalate as needed, and ensure smooth operation of all IT systems during operational hours.
+Proven experience in full stack software development with a strong portfolio of web applications built using JavaScript frameworks like React or Express.
+Hands-on knowledge of server-side programming languages including Ruby on Rails, Python, Java, C#, or C++.
+Familiarity with cloud platforms such as AWS or Azure for deploying scalable applications with secure access controls.
+Solid understanding of RESTful API design principles and experience integrating multiple APIs into complex systems.
+Experience working within Agile methodologies to deliver iterative improvements efficiently.
+Proficiency with version control tools like GitHub or SVN for collaborative development workflows.
+Strong background in database management using MySQL or SQL Server, including writing optimized queries.
+Knowledge of IT infrastructure concepts including Linux server environments and application deployment pipelines.
+Exposure to quantum engineering concepts is a plus but not mandatory—demonstrating adaptability to emerging technologies is valued.
+Additional skills such as VBA scripting or familiarity with .NET frameworks can enhance your contribution to diverse projects. Join us as a Full Stack Developer where your expertise will fuel innovative solutions that impact users worldwide! We are committed to fostering an inclusive environment that supports your growth through continuous learning opportunities and cutting-edge projects—all while ensuring your work makes a real difference in the digital landscape!
+Job Type: Full-time
 
-Job dates:
-Training: October 3rd
-Onsite: Work October 5th - October 11th
-Salary: $30/hr
- 
-Key Responsibilities:
-Install, configure, and test hardware, including laptops, wireless routers/modems, and authentication devices (e.g., Yubikeys).
-
-Set up and verify system connectivity to internet service providers and internal applications.
-
-Provide daily startup support, including powering up laptops and routers, verifying functionality, and assisting users with logins.
-
-Manage distribution, collection, and secure storage of authentication devices and passcodes.
-
-Offer on-site technical assistance for hardware, software, and application-related issues, escalating to higher-level support when required.
-
-Monitor system performance throughout operational hours and ensure equipment remains functional and secure.
-
-Perform daily shutdown of equipment, including proper power-down procedures and secure storage of devices.
-
-Conduct teardown, inventory management, and return of IT equipment at the end of the assignment.
-
-Maintain accurate records of hardware (laptops, routers, authentication devices) and credentials before, during, and after deployment.
-
- 
-Skills & Qualifications:
-On-site support role requiring travel to designated locations.
-
-Early start times and end-of-day responsibilities required.
-
-Physical ability to transport, set up, and secure IT equipment.
-
-Proven experience in IT support, desktop support, or technical field services.
-
-Strong knowledge of hardware setup and troubleshooting, including laptops, routers, and authentication devices.
-
-Familiarity with user authentication tools (e.g., Yubikeys, multi-factor authentication).
-
-Ability to manage multiple user accounts and support login/access processes.
-
-Knowledge of networking fundamentals, including wireless connectivity and router setup.
-
-Strong problem-solving skills with the ability to troubleshoot both hardware and software issues.
-
-Excellent organizational skills for equipment tracking, setup, and teardown.
-
-Effective communication and interpersonal skills for supporting end users.
-
-Ability to work independently, with a focus on reliability and attention to detail.
-
- 
-Equity Statement
-At Compugen, we are committed to diversity, equity and inclusion. We actively recruit from all groups, including women, Indigenous people, persons with disabilities and members of visible minorities. We recognize the importance of removing barriers to participation and provide accommodation upon request to all applicants throughout the recruitment process. If you require an accommodation, our People & Culture representative will work with you to meet your needs in a confidential and respectful manner. We believe everyone deserves a seat at the table-and we are taking deliberate action to make this a reality.`,
+Pay: $58,321.10-$135,079.60 per year`,
 };

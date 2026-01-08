@@ -59,7 +59,7 @@ async function generatePDF() {
   await page.goto("http://localhost:3000", { waitUntil: "networkidle0" });
 
   await page.pdf({
-    path: "resume.pdf",
+    path: "HarjapSingh_resume.pdf",
     format: "A4",
     printBackground: true,
     margin: {
@@ -80,7 +80,7 @@ async function generateCoverLetter() {
   await page.goto("http://localhost:3000/cover", { waitUntil: "networkidle0" });
 
   await page.pdf({
-    path: "coverLetter.pdf",
+    path: "HarjapSingh_coverLetter.pdf",
     format: "A4",
     printBackground: true,
     margin: {
@@ -97,7 +97,7 @@ async function generateCoverLetter() {
 
 (async () => {
   try {
-    await updateResumeData();
+    // await updateResumeData();
     await new Promise((r) => setTimeout(r, 2000));
     await generatePDF();
     await generateCoverLetter();
